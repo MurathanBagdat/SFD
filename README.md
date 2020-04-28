@@ -26,7 +26,7 @@ To build sensor fault detection system on highly critical compressor that has 41
 # 3. File Descriptions
 
 There are 5 files in this project.</br>
-- **177K201_sensorNameList**	is a excel file that is sensor names are listed. This list is used for data fecthing process from company database.</br>
+- **177K201_sensorNameList**	is a excel file that has sensor names as a list. This list is used for data fecthing process from company database.</br>
 - **sensorData** is a excel file that contains 31 days of sensor data to be used in model testing.</br>
 - **SFD_Project.ipynb** is a jupyter notebook. You can find the data analysis and modelling steps in here. At bottom of the notebook you find final application that is running in my companys servers.</br>
 - **SFD_utils.py** python file that contaions functions that I used in this project.</br>
