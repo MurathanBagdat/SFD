@@ -25,8 +25,13 @@ To build sensor fault detection system on highly critical compressor that has 41
 
 # 3. File Descriptions
 
-There are 5 files in this project.
-177K201_sensorNameList.xlsx	is a excel file that is sensor names are listed. This list is used for data fecthing process from company database.
+There are 5 files in this project.</br>
+- **177K201_sensorNameList**	is a excel file that is sensor names are listed. This list is used for data fecthing process from company database.</br>
+- **sensorData** is a excel file that contains 31 days of sensor data to be used in model testing.</br>
+- **SFD_Project.ipynb** is a jupyter notebook. You can find the data analysis and modelling steps in here. At bottom of the notebook you find final application that is running in my companys servers.</br>
+- **SFD_utils.py** python file that contaions functions that I used in this project.</br>
+- **mb_ThdData.py** python module that I created to fetch data from company database. You can not use that code because you are out of company network.</br>
 
-
-Project consist of 2 types of files. One of them csv files that I used as datasources. Second one is jupyter notebook file that you can find my analysis about the subject.
+# 3. The Application
+Application fetches last 24 hours of data using **mb_ThdData** module and assumes that all sensor are fine at the start and clusters data based on hierarchical clustring. We call those first clusters as **finger-print of the unit**. After every 8 hours (each one represent one shift) we take newly generated data and we cluster it to compare with finger print to detect any faulty sensor. IF all clusters are the same there is nothing to worry about. If each shifts data is O.K. then application uses newly generated 24 hours of data to produce new finger-print then uses to it to check future data. But if it finds any differences between finger-print clusters and newly generated clusters, application detects and identifies which sensor or sensors are clustered differently and shows them as faulty sensors.
+You find the code for application at the bottom of the notebook **SFD_Project.ipynb**
