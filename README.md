@@ -32,6 +32,6 @@ There are 5 files in this project.</br>
 - **SFD_utils.py** python file that contaions functions that I used in this project.</br>
 - **mb_ThdData.py** python module that I created to fetch data from company database. You can not use that code because you are out of company network.</br>
 
-# 3. The Application
+# 4. The Application
 Application fetches last 24 hours of data using **mb_ThdData** module and assumes that all sensor are fine at the start and clusters data based on hierarchical clustring. We call those first clusters as **finger-print of the unit**. After every 8 hours (each one represent one shift) we take newly generated data and we cluster it to compare with finger print to detect any faulty sensor. IF all clusters are the same there is nothing to worry about. If each shifts data is O.K. then application uses newly generated 24 hours of data to produce new finger-print then uses to it to check future data. But if it finds any differences between finger-print clusters and newly generated clusters, application detects and identifies which sensor or sensors are clustered differently and shows them as faulty sensors.
 You find the code for application at the bottom of the notebook **SFD_Project.ipynb**
