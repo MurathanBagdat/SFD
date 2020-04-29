@@ -13108,7 +13108,7 @@ Compressor has 41 sensors on it.</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h1>Table of Contents<span class="tocSkip"></span></h1></p>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Data-Preprocess" data-toc-modified-id="Data-Preprocess-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Data Preprocess</a></span><ul class="toc-item"><li><span><a href="#Load-Data" data-toc-modified-id="Load-Data-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Load Data</a></span></li><li><span><a href="#Missing-Values" data-toc-modified-id="Missing-Values-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Missing Values</a></span></li><li><span><a href="#Data-Visualization" data-toc-modified-id="Data-Visualization-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>Data Visualization</a></span></li><li><span><a href="#Data-Scaling" data-toc-modified-id="Data-Scaling-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>Data Scaling</a></span></li><li><span><a href="#Split-and-Transpose-Data" data-toc-modified-id="Split-and-Transpose-Data-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>Split and Transpose Data</a></span></li><li><span><a href="#Outlier-Detection-using-DBSCAN" data-toc-modified-id="Outlier-Detection-using-DBSCAN-1.6"><span class="toc-item-num">1.6&nbsp;&nbsp;</span>Outlier Detection using DBSCAN</a></span></li></ul></li><li><span><a href="#Analysis" data-toc-modified-id="Analysis-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Analysis</a></span><ul class="toc-item"><li><span><a href="#Finding-the-Right-Linkage-Method" data-toc-modified-id="Finding-the-Right-Linkage-Method-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Finding the Right Linkage Method</a></span><ul class="toc-item"><li><span><a href="#Compare-Different-Linkages" data-toc-modified-id="Compare-Different-Linkages-2.1.1"><span class="toc-item-num">2.1.1&nbsp;&nbsp;</span>Compare Different Linkages</a></span><ul class="toc-item"><li><span><a href="#WARD" data-toc-modified-id="WARD-2.1.1.1"><span class="toc-item-num">2.1.1.1&nbsp;&nbsp;</span>WARD</a></span></li><li><span><a href="#AVERAGE" data-toc-modified-id="AVERAGE-2.1.1.2"><span class="toc-item-num">2.1.1.2&nbsp;&nbsp;</span>AVERAGE</a></span></li><li><span><a href="#COMPLETE" data-toc-modified-id="COMPLETE-2.1.1.3"><span class="toc-item-num">2.1.1.3&nbsp;&nbsp;</span>COMPLETE</a></span></li><li><span><a href="#SINGLE" data-toc-modified-id="SINGLE-2.1.1.4"><span class="toc-item-num">2.1.1.4&nbsp;&nbsp;</span>SINGLE</a></span></li></ul></li></ul></li><li><span><a href="#CONCLUSION-ON-LINKAGE-METHOD" data-toc-modified-id="CONCLUSION-ON-LINKAGE-METHOD-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span><strong>CONCLUSION ON LINKAGE METHOD</strong><br></a></span></li></ul></li><li><span><a href="#MODELLING-&amp;-TESTING/Validation" data-toc-modified-id="MODELLING-&amp;-TESTING/Validation-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>MODELLING &amp; TESTING/Validation</a></span><ul class="toc-item"><li><span><a href="#Modelling" data-toc-modified-id="Modelling-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Modelling</a></span></li><li><span><a href="#Testing-/-Validation" data-toc-modified-id="Testing-/-Validation-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Testing / Validation</a></span><ul class="toc-item"><li><span><a href="#Conclusion-on-Testing" data-toc-modified-id="Conclusion-on-Testing-3.2.1"><span class="toc-item-num">3.2.1&nbsp;&nbsp;</span>Conclusion on Testing</a></span></li></ul></li></ul></li><li><span><a href="#The-Application" data-toc-modified-id="The-Application-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>The Application</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Data-Preprocess" data-toc-modified-id="Data-Preprocess-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Data Preprocess</a></span><ul class="toc-item"><li><span><a href="#Load-Data" data-toc-modified-id="Load-Data-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Load Data</a></span></li><li><span><a href="#Missing-Values" data-toc-modified-id="Missing-Values-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Missing Values</a></span></li><li><span><a href="#Data-Visualization" data-toc-modified-id="Data-Visualization-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>Data Visualization</a></span></li><li><span><a href="#Data-Scaling" data-toc-modified-id="Data-Scaling-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>Data Scaling</a></span></li><li><span><a href="#Split-and-Transpose-Data" data-toc-modified-id="Split-and-Transpose-Data-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>Split and Transpose Data</a></span></li><li><span><a href="#Outlier-Detection-using-DBSCAN" data-toc-modified-id="Outlier-Detection-using-DBSCAN-1.6"><span class="toc-item-num">1.6&nbsp;&nbsp;</span>Outlier Detection using DBSCAN</a></span></li></ul></li><li><span><a href="#Analysis" data-toc-modified-id="Analysis-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Analysis</a></span><ul class="toc-item"><li><span><a href="#Finding-the-Right-Linkage-Method" data-toc-modified-id="Finding-the-Right-Linkage-Method-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Finding the Right Linkage Method</a></span><ul class="toc-item"><li><span><a href="#Compare-Different-Linkages" data-toc-modified-id="Compare-Different-Linkages-2.1.1"><span class="toc-item-num">2.1.1&nbsp;&nbsp;</span>Compare Different Linkages</a></span><ul class="toc-item"><li><span><a href="#WARD" data-toc-modified-id="WARD-2.1.1.1"><span class="toc-item-num">2.1.1.1&nbsp;&nbsp;</span>WARD</a></span></li><li><span><a href="#AVERAGE" data-toc-modified-id="AVERAGE-2.1.1.2"><span class="toc-item-num">2.1.1.2&nbsp;&nbsp;</span>AVERAGE</a></span></li><li><span><a href="#COMPLETE" data-toc-modified-id="COMPLETE-2.1.1.3"><span class="toc-item-num">2.1.1.3&nbsp;&nbsp;</span>COMPLETE</a></span></li><li><span><a href="#SINGLE" data-toc-modified-id="SINGLE-2.1.1.4"><span class="toc-item-num">2.1.1.4&nbsp;&nbsp;</span>SINGLE</a></span></li></ul></li></ul></li><li><span><a href="#CONCLUSION-ON-LINKAGE-METHOD" data-toc-modified-id="CONCLUSION-ON-LINKAGE-METHOD-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span><strong>CONCLUSION ON LINKAGE METHOD</strong><br></a></span></li></ul></li><li><span><a href="#MODELLING-&amp;-TESTING/Validation" data-toc-modified-id="MODELLING-&amp;-TESTING/Validation-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>MODELLING &amp; TESTING/Validation</a></span><ul class="toc-item"><li><span><a href="#Modelling" data-toc-modified-id="Modelling-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Modelling</a></span></li><li><span><a href="#Testing-/-Validation" data-toc-modified-id="Testing-/-Validation-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Testing / Validation</a></span><ul class="toc-item"><li><span><a href="#Conclusion-on-Testing" data-toc-modified-id="Conclusion-on-Testing-3.2.1"><span class="toc-item-num">3.2.1&nbsp;&nbsp;</span>Conclusion on Testing</a></span></li></ul></li></ul></li><li><span><a href="#The-Application" data-toc-modified-id="The-Application-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>The Application</a></span></li><li><span><a href="#Further-Improvements" data-toc-modified-id="Further-Improvements-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Further Improvements</a></span><ul class="toc-item"><li><span><a href="#Additional-solutions" data-toc-modified-id="Additional-solutions-5.1"><span class="toc-item-num">5.1&nbsp;&nbsp;</span>Additional solutions</a></span></li><li><span><a href="#Improvements-for-current-solution" data-toc-modified-id="Improvements-for-current-solution-5.2"><span class="toc-item-num">5.2&nbsp;&nbsp;</span>Improvements for current solution</a></span></li></ul></li></ul></div>
 </div>
 </div>
 </div>
@@ -15121,6 +15121,44 @@ FETCHING DAILY DATA.. 2020-04-28
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Further-Improvements">Further Improvements<a class="anchor-link" href="#Further-Improvements">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Additional-solutions">Additional solutions<a class="anchor-link" href="#Additional-solutions">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To improve existing solution and detect all faults another clustering algorithm might be used to cooperate with existing solution. For example DBSCAN might be good chooice to detect short lived faults.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Improvements-for-current-solution">Improvements for current solution<a class="anchor-link" href="#Improvements-for-current-solution">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Another improvement can be made on top of existing solution might be predicting sensor readings while they are faulty.&lt;/br&gt;
+For that reason neural networks solutions can be used.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
